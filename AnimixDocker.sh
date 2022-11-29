@@ -3,7 +3,7 @@ echo "Bem vindo ao Instalador do Animix :)"
     sleep 3
 echo "Vamos começar ?"
 
-passwd ubuntu
+sudo passwd ubuntu
 
     sleep 5
 echo "Primeiro, vamos fazer algumas atualizações..."
