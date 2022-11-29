@@ -93,7 +93,7 @@ CREATE TABLE funcionario(
 echo "Agora, vamos instalar o Container que conterá o java para executar uma aplicação Animix :)"
     sleep 3
 
-java --version
+java -version
 if [ $? -eq 0 ];
 then
 echo "java instalado"
