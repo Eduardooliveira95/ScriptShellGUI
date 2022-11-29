@@ -101,10 +101,6 @@ sudo apt install default-jre -y
     sleep 3
 git clone https://github.com/alecostx/animix-data-collection.git
 
-sudo docker build -t dockerfile .
-sudo docker run -d -t --rm --name containerjava dockerfile
-
-
 else
 echo "java nao instalado"
 echo "gostaria de instalar o java em sua Máquina Virtual? (s/n)"
@@ -113,9 +109,5 @@ if [ \"$inst\" == \"s\" ];
 then
 sudo apt install default-jre -y
 git clone https://github.com/alecostx/animix-data-collection.git
-
-sudo docker build -t dockerfile .
-sudo docker run -d -t --name containerjava dockerfile
-
 fi
 fi
