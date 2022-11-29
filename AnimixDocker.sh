@@ -3,6 +3,8 @@ echo "Bem vindo ao Instalador do Animix :)"
     sleep 3
 echo "Vamos começar ?"
 
+passwd ubuntu
+
     sleep 5
 echo "Primeiro, vamos fazer algumas atualizações..."
 sudo apt update && sudo apt update
@@ -91,14 +93,13 @@ CREATE TABLE funcionario(
 echo "Agora, vamos instalar o Container que conterá o java para executar uma aplicação Animix :)"
     sleep 3
 
-
+java --version
 if [ $? -eq 0 ];
 then
 echo "java instalado"
 sudo apt install default-jre -y
     sleep 3
 git clone https://github.com/alecostx/animix-data-collection.git
-git clone https://github.com/Lykked/animix-data-colection-CLI.git
 
 sudo docker build -t dockerfile .
 sudo docker run -d -t --rm --name containerjava dockerfile
@@ -112,7 +113,6 @@ if [ \"$inst\" == \"s\" ];
 then
 sudo apt install default-jre -y
 git clone https://github.com/alecostx/animix-data-collection.git
-git clone https://github.com/Lykked/animix-data-colection-CLI.git
 
 sudo docker build -t dockerfile .
 sudo docker run -d -t --name containerjava dockerfile
