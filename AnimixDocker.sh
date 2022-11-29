@@ -68,18 +68,18 @@ CREATE TABLE maquinas(
 CREATE TABLE dados(
 	idDado int primary key auto_increment,
 	fkMaquina int,
-	usoCpu decimal(5, 2) NULL,
-	usoMemoria decimal(5, 2) NULL,
-	temperatura decimal(5, 2) NULL,
+	usoCpu decimal(10, 2) NULL,
+	usoMemoria decimal(10, 2) NULL,
+	temperatura decimal(10, 2) NULL,
 	qtdProcessos int,
 	qtdServicos int,
 	dataColeta varchar(45),
 	momento time,
 	isCritico bit NULL,
 	comment varchar(200) NULL,
-	leitura decimal(5, 2) NULL,
-	escrita decimal(5, 2) NULL,
-	usoDisco decimal(5, 2) NULL
+	leitura decimal(10, 2) NULL,
+	escrita decimal(10, 2) NULL,
+	usoDisco decimal(10, 2) NULL
 );
 
 CREATE TABLE funcionario(
