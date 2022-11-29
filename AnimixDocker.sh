@@ -3,7 +3,7 @@ echo "Bem vindo ao Instalador do Animix :)"
     sleep 3
 echo "Vamos começar ?"
 
-echo "Antes de tudo, vamos adicionar uma senha padrão!"
+echo "Antes de tudo, vamos adicionar uma senha padrão!!"
 sudo passwd ubuntu
 
     sleep 5
