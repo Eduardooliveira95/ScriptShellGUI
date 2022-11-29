@@ -8,7 +8,7 @@ sudo passwd ubuntu
 
     sleep 5
 echo "Primeiro, vamos fazer algumas atualizações..."
-sudo apt update && sudo apt update
+sudo apt update && sudo apt upgrade 
 
 echo "Gostaria de instalar uma interface gráfica ? (s/n)"
 read inst
