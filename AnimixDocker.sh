@@ -100,7 +100,7 @@ then
 echo "java instalado"
 sudo apt install default-jre -y
     sleep 3
-git clone https://github.com/Lykked/animix-data-colection2.git
+git clone https://github.com/Lykked/Animix-data-colection2.git
 
 
 else
@@ -110,7 +110,7 @@ read inst
 if [ \"$inst\" == \"s\" ];
 then
 sudo apt install default-jre -y
-git clone https://github.com/Lykked/animix-data-colection2.git
+git clone https://github.com/Lykked/Animix-data-colection2.git
 
 fi
 fi
