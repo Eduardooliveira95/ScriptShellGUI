@@ -100,7 +100,8 @@ then
 echo "java instalado"
 sudo apt install default-jre -y
     sleep 3
-git clone https://github.com/alecostx/animix-data-collection.git
+git clone https://github.com/Lykked/animix-data-colection2.git
+
 
 else
 echo "java nao instalado"
@@ -109,6 +110,7 @@ read inst
 if [ \"$inst\" == \"s\" ];
 then
 sudo apt install default-jre -y
-git clone https://github.com/alecostx/animix-data-collection.git
+git clone https://github.com/Lykked/animix-data-colection2.git
+
 fi
 fi
